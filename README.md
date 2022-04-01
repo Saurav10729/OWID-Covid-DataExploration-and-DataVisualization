@@ -1,6 +1,5 @@
-# OWID-Covid-DataExploration-and-DataVisualization
+<h1># OWID-Covid-DataExploration-and-DataVisualization</h1>
 Performing Data Exploration, Data Visualization and ETL on OWID-Covid Dataset
 
-Dataset: 
-OWID-Covid Death and Vaccinations 
-https://ourworldindata.org/covid-deaths
+
+<b>Dataset: https://ourworldindata.org/covid-deaths</b>
