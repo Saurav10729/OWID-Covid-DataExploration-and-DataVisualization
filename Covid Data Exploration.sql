@@ -14,7 +14,6 @@ FROM PortfolioProject..CovidDeaths$
 ORDER BY 1,2
 
 -- looking at Total Cases v Total Deaths
--- shows the likelyhood of dying if you get covid in nepal(any country)
 
 SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as Death_Percentage
 FROM PortfolioProject..CovidDeaths$
@@ -23,14 +22,13 @@ ORDER BY 1,2
 
 
 -- looking at Total Cases v Population
--- shows % of population that got infected
 
  select location, date, total_cases, population, (total_cases/population)*100 as Infected_Popn_Percentage
  from PortfolioProject..CovidDeaths$
  --where location = 'nepal'
  order by 1,2
 
---which countries have highest infection rate compared to population
+--which countries have highest infection rate with respect to total population
 Select location, max(population) as PeakPopulation, max(total_cases) as PeakInfectionCount, Max((total_cases/population))*100 as Infection_rate
 From PortfolioProject..CovidDeaths$
 where continent is not null
@@ -55,7 +53,7 @@ Group by location
 Order by location
 
 
--- Breakdown the data we looked at earlier by Continents
+-- Breakdown the data by Continents
 
 Select continent, Max(cast(total_deaths as int)) as TotalDeathCount, max(cast(total_deaths as int)/population) as Death_rate 
 From PortfolioProject..CovidDeaths$
@@ -64,7 +62,7 @@ Group by continent
 Order by TotalDeathCount desc
 
 
--- showing the continents with highest death counts
+-- Continents with highest death counts
 
 Select continent, Max(cast(total_deaths as int)) as TotalDeathCount, max(cast(total_deaths as int)/population) as Death_rate 
 From PortfolioProject..CovidDeaths$
@@ -76,7 +74,7 @@ Order by TotalDeathCount desc
 
 -- GLOBAL DATA
 
---looking at daily values of cases v deaths
+--looking at Daily count of Cases V Deaths
 Select date, SUM(new_cases)as TotalDailyCases, SUM(cast(new_deaths as int)) as TotalDailyDeaths, (SUM(cast(new_deaths as int))/SUM(new_cases))*100 as Death_Percent
 from PortfolioProject..CovidDeaths$
 -- where location like '%nepal%'
@@ -85,7 +83,7 @@ Group by date
 order by 1,2 
 
 
--- looking at total without date grouping
+-- looking at Total Count without Date Grouping
 Select  SUM(new_cases)as TotalCases, SUM(cast(new_deaths as int)) as TotalDeaths, (SUM(cast(new_deaths as int))/SUM(new_cases))*100 as Death_Percent
 from PortfolioProject..CovidDeaths$
 -- where location like '%nepal%'
@@ -94,10 +92,9 @@ where continent is not null
 order by 1,2 
 
 
--- JOINING Both CovidDeath and CovidVaccination Data
+-- JOINING Both CovidDeath and CovidVaccination Table
 
--- looking at total population v vaccination
-
+-- looking at total Population v Vaccination
 
 Select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
 , SUM(CONVERT(bigint,vac.new_vaccinations)) OVER (Partition by dea.Location order by dea.location, 
@@ -110,7 +107,7 @@ where dea.continent is not null
 order by 2,3
 
 
---Using CTE
+--Using CTE to utilize newly created column 'CumulativeVaccinationCount'
 with PopnVsVac(Continent, Location, date, population, new_vaccinations, CumulativeVaccinationCount)
 as
 (
@@ -130,7 +127,7 @@ order by Location,date
 
 
 
--- TEMP TABLE
+-- TEMP TABLE so we can utilize the column 'CumulativeVaccinationCount' more than once
 
 Drop Table If Exists #PercentagePopulationVaccinated
 Create Table #PercentagePopulationVaccinated
@@ -171,6 +168,8 @@ Join PortfolioProject..CovidVaccinations$ vac
 Where dea.continent is not null
 -- Order by 2,3
 
+
+-- viewing the data in the above created view.
 Select * 
 From PercentagePopulationVaccinated 
 Where continent = 'asia'
