@@ -1,10 +1,10 @@
---SELECT *
---FROM PortfolioProject..CovidDeaths$
---ORDER BY 3,4
+SELECT *
+FROM PortfolioProject..CovidDeaths$
+ORDER BY 3,4
 
---SELECT *
---FROM PortfolioProject..CovidVaccinations$
---ORDER BY 3,4
+SELECT *
+FROM PortfolioProject..CovidVaccinations$
+ORDER BY 3,4
 
 
 --Select the data we are going to use
