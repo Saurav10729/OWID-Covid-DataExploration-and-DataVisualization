@@ -10,8 +10,6 @@ Performing Data Exploration and Data Visualization  on OWID-Covid Dataset
     + [Default Dashboard](#default-dashboard)
     + [Filtering by Continent](#filtering-by-continent)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 
 ## Dataset
