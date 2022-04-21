@@ -26,7 +26,7 @@ I explored the data by looking at the data as a whole, as well as looking at dat
 
 ### For Example
 
-showing countries with highest death count per population
+Showing countries with highest death count per population.
 ```sql
 
 Select location,max(cast(total_deaths as int)) as TotalDeathCount, max(population) as Population, 
