@@ -1,5 +1,5 @@
 # OWID-Covid-DataExploration-and-DataVisualization
-Performing Data Exploration, Data Visualization and ETL on OWID-Covid Dataset
+Performing Data Exploration and Data Visualization  on OWID-Covid Dataset
 
 
 ## Dataset
