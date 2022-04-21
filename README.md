@@ -14,7 +14,7 @@ Performing Data Exploration and Data Visualization  on OWID-Covid Dataset
 
 ## Dataset
 
-Download the updated OWID-COVID Dataset from [here](https://ourworldindata.org/covid-deaths)
+Download the updated OWID-COVID Dataset from [**here**](https://ourworldindata.org/covid-deaths)
 
 The Dataset i used contained data upto March 28, 2022
 For easier Exploration and Visualization, Data regarding deaths and vaccinations are seperated into 2 tables during exploration using SQL
@@ -42,7 +42,7 @@ Order by Death_rate desc
 
 First, Connect tableau desktop to Microsoft SQL Server. 
 
-I have created 2 dashboards (Covid-Deaths, Covid-Vaccinations) and attached it onto a story. You can check it out by visiting the link below. [Click here.](https://public.tableau.com/app/profile/saurav.adhikari2682/viz/OWID-CovidDeathDataVisualization/CovidDeaths) 
+I have created 2 dashboards (Covid-Deaths, Covid-Vaccinations) and attached it onto a story. You can check it out by visiting the link below. [**Click here.**](https://public.tableau.com/app/profile/saurav.adhikari2682/viz/OWID-CovidDeathDataVisualization/CovidDeaths) 
 
 ### Default Dashboard
 
