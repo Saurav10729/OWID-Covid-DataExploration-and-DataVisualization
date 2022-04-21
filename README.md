@@ -32,6 +32,7 @@ Order by Death_rate desc
 ## Data Visualization in Tableau 
 
 First, Connect tableau desktop to Microsoft SQL Server. i have created 2 dashboards (deaths, health) and attached it onto a story.
+[Click here](https://public.tableau.com/app/profile/saurav.adhikari2682/viz/OWID-CovidDeathDataVisualization/CovidDeaths) to see the dashboards
 
 
 
