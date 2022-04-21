@@ -23,7 +23,7 @@ showing countries with highest death count per population
 
 Select location,max(cast(total_deaths as int)) as TotalDeathCount, max(population) as Population, 
  Max((cast(total_deaths as int)/population))*100 as Death_rate
-From PortfolioProject..CovidDeaths$
+From OWID-Database..CovidDeaths$
 where continent is not null
 Group by location, population
 Order by Death_rate desc
