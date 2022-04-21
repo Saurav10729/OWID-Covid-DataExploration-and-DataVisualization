@@ -6,10 +6,10 @@ Performing Data Exploration and Data Visualization  on OWID-Covid Dataset
 
 Download the updated OWID-COVID Dataset from [here](https://ourworldindata.org/covid-deaths)
 
-I downloaded the data updated to March 28, 2022
-I divided the dataset into 2 excel files, one for death related data and next for vaccination related data.
- 
+The Dataset i used contained data upto March 28, 2022
 
+For easier exploration and visualization, Data regarding deaths and vaccinations are seperated into 2 tables during exploration using SQL
+ 
 
 ## Data Exploration using Microsoft Server Management Studio
 
