@@ -14,7 +14,7 @@ Performing Data Exploration and Data Visualization  on OWID-Covid Dataset
 
 ## Dataset
 
-Download the updated OWID-COVID Dataset from [**here**](https://ourworldindata.org/covid-deaths)
+Download the updated Our World In Data (OWID)-Covid 19 Dataset from [**here**](https://ourworldindata.org/covid-deaths)
 
 The Dataset i used contained data upto March 28, 2022
 For easier Exploration and Visualization, Data regarding deaths and vaccinations are seperated into 2 tables during exploration using SQL
@@ -25,7 +25,7 @@ For easier Exploration and Visualization, Data regarding deaths and vaccinations
 Create a new database and import the excel files into 2 tables.
 I explored the data by looking at the data as a whole, as well as looking at data based on different continents, sorting by highest average infection and death rates and more.
 
-### For Example:
+### For Example
 
 showing countries with highest death count per population
 ```sql
