@@ -32,10 +32,12 @@ Order by Death_rate desc
 
 First, Connect tableau desktop to Microsoft SQL Server. 
 
-I have created 2 dashboards (deaths, health) and attached it onto a story. You can check it out by visiting the link below.
-[Click here](https://public.tableau.com/app/profile/saurav.adhikari2682/viz/OWID-CovidDeathDataVisualization/CovidDeaths) to see the Covid-Death Dashboards
+I have created 2 dashboards (deaths, health) and attached it onto a story. You can check it out by visiting the link below.[Click here](https://public.tableau.com/app/profile/saurav.adhikari2682/viz/OWID-CovidDeathDataVisualization/CovidDeaths) 
 
 ![My Image](ss.png)
+
+### Filtering by Continent
+![My Image](ss2.png)
 
 
 
