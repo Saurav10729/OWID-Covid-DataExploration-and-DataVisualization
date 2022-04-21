@@ -20,10 +20,10 @@ I explored the data by looking at the data as a whole, as well as looking at dat
 showing countries with highest death count per population
 ```sql
 
-Select location,max(cast(total_deaths as int)) as TotalDeathCount, max(population) as Population, Max((cast(total_deaths as int)/population))*100 as Death_rate
+Select location,max(cast(total_deaths as int)) as TotalDeathCount, max(population) as Population, 
+ Max((cast(total_deaths as int)/population))*100 as Death_rate
 From PortfolioProject..CovidDeaths$
 where continent is not null
---and location like '%asia%'
 Group by location, population
 Order by Death_rate desc
 ```
