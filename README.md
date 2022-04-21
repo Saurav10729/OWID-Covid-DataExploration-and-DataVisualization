@@ -16,8 +16,16 @@ Create a new database and import the excel files into 2 tables.
 I explored the data by looking at the data as a whole, as well as looking at data based on different continents, sorting by highest average infection and death rates and more.
 
 for example:
-'''
 
+'''
+#showing countries with highest death count per population
+
+Select location,max(cast(total_deaths as int)) as TotalDeathCount, max(population) as Population, Max((cast(total_deaths as int)/population))*100 as Death_rate
+From PortfolioProject..CovidDeaths$
+where continent is not null
+--and location like '%asia%'
+Group by location, population
+Order by Death_rate desc
 '''
 
 Viewing the average death percentage 
