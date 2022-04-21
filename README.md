@@ -11,7 +11,6 @@ Performing Data Exploration and Data Visualization  on OWID-Covid Dataset
     + [Filtering by Continent](#filtering-by-continent)
 
 
-
 ## Dataset
 
 Download the updated Our World In Data (OWID)-Covid 19 Dataset from [**here**](https://ourworldindata.org/covid-deaths)
