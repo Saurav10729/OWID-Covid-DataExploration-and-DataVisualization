@@ -29,4 +29,9 @@ Group by location, population
 Order by Death_rate desc
 ```
 
+## Data Visualization in Tableau 
+
+First, Connect tableau desktop to Microsoft SQL Server. i have created 2 dashboards (deaths, health) and attached it onto a story.
+
+
 
