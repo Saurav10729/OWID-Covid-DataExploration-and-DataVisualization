@@ -10,6 +10,7 @@ i downloaded the data updated to March 28, 2022
 I divided the dataset into 2 excel files, one for death related data and next for vaccination related data.
  
 
+
 ## Data Exploration using Microsoft Server Management Studio
 
 Create a new database and import the excel files into 2 tables.
