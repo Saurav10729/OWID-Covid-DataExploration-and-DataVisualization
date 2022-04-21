@@ -5,7 +5,7 @@ Performing Data Exploration and Data Visualization  on OWID-Covid Dataset
 - [OWID-Covid-DataExploration-and-DataVisualization](#owid-covid-dataexploration-and-datavisualization)
   * [Dataset](#dataset)
   * [Data Exploration using Microsoft Server Management Studio](#data-exploration-using-microsoft-server-management-studio)
-    + [For Example:](#for-example-)
+    + [For Example:](#for-example)
   * [Data Visualization in Tableau](#data-visualization-in-tableau)
     + [Default Dashboard](#default-dashboard)
     + [Filtering by Continent](#filtering-by-continent)
