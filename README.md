@@ -16,7 +16,7 @@ I divided the dataset into 2 excel files, one for death related data and next fo
 Create a new database and import the excel files into 2 tables.
 I explored the data by looking at the data as a whole, as well as looking at data based on different continents, sorting by highest average infection and death rates and more.
 
-### For example:
+### For Example:
 
 showing countries with highest death count per population
 ```sql
@@ -29,7 +29,7 @@ Group by location, population
 Order by Death_rate desc
 ```
 
-## Data Visualization in Tableau 
+<u> ## Data Visualization in Tableau <u>
 
 First, Connect tableau desktop to Microsoft SQL Server. i have created 2 dashboards (deaths, health) and attached it onto a story.
 
